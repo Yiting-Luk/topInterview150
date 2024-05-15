@@ -26,6 +26,7 @@ class Solution(object):
                         return False
                     else:
                         skip = 0
+                        ncz = 0
                 elif i == lenNum - 1 and ncz > 0:
                     j = i - ncz
                     minSteps = ncz
@@ -39,6 +40,7 @@ class Solution(object):
                         return False
                     else:
                         skip = 0
+                        ncz = 0
             return True
 
 nums = [2,0,1,0,1]
